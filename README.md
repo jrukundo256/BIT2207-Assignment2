@@ -1,2 +1,13 @@
 # BIT2207-Assignment2
-Your goal in this assignment will be to come up with a concept paper based on the topic given. Mostly you may not understand what the topic is about, but believe me its a computer science topic. The goal is to see if you can research on *any* computer science topic and come up with a convincing understanding of the subject matter. While the goal is not necessarily to understand in depth the project, you should be able to understand the topic to a fairly good level through RESEARCH, this is the point of the course.
+Our goal in this assignment will be to come up with a concept paper based on the topic (How to build an animation or simulation system). 
+
+
+Building an Animation or Simulation System
+
+Abstract
+
+The simulation of objects and beings within a computer has become a hot topic over the last few years, with applications to virtual reality, the design of safe stadia, synthetic actors and environments for films, and computer games, amongst others. 
+
+This project would look at the design and construction of a relatively simple animation or simulation system, that would probably sacrifice ease of animation in order to focus on the modelling of interactions between the actors and their environments.
+
+Such a project would probably make use of existing collision detection code within the computing laboratory, coupled with algorithms that simulate the physical interaction of bodies. (An alternative would be to use one of the physical modelling APIs that are now becoming available.)
