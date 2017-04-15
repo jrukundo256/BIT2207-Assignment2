@@ -1,10 +1,5 @@
 # BIT2207-Assignment2
-Our goal in this assignment will be to come up with a concept paper based on the topic (How to build an animation or simulation system). 
-
-
 Building an Animation or Simulation System
-
-Abstract
 
 The simulation of objects and beings within a computer has become a hot topic over the last few years, with applications to virtual reality, the design of safe stadia, synthetic actors and environments for films, and computer games, amongst others. 
 
