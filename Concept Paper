@@ -1,1 +1,35 @@
 
+How to build a Character Animation System
+
+1.0.	      Introduction/Background
+Animating virtual humans is a complex task. Many diﬀerent aspects of human behavior need to be modeled in order to generate a convincing result. The behavior and appearance of a virtual character needs to be recognizably human in expression, although photorealism is not necessary. People are adept at recognizing movement and human-like behavior, so the actions and appearance of a virtual character must match the expectations of the human viewer. This means that not only must the character’s movements be natural, but they must be contextually appropriate, such as responding with the appropriate reaction and in the proper time frame to stimuli. Research has been done on various aspects of character animation, such as locomotion and facial animation. However, the integration of all these aspects leads to complexities. For example, coordinating locomotion with path ﬁnding, or coordinating reaching with gazing. At ﬁrst glance, it appears that modeling an entire animated character can be achieved by combining individual areas, and then reassembling the ﬁnal character as a combination of each individual part. For example, locomotion can be combined with a lip sync animation. This combination works since there is little relationship between locomotion and the movement of a character’s lips and face. Serious problems arrive when the areas overlap and directly or indirectly impact each other. For example, performing a manipulation with your hands while simultaneously looking at another object in the virtual world. The looking behavior might engage parts of the character’s body that disrupt the manipulation. Thus, although manipulation and gazing are distinct problem areas in animation research, they can interact with each other in unexpected ways.
+
+1.2.    Problem Statement
+This project will address the challenge of simulating the different aspects of human behaviour and the difficulties that arise as we try to integrate all these aspects. This is what we need if we are to synthesize a highly realistic, interactive character. 
+
+Many game engines provide robust solutions to many real time simulation problems such as mesh rendering, lighting, particle eﬀects and so forth. However, game engines generally do not handle complex character animation. They often provide a general framework for replaying animations on a hierarchical skeleton, as well as a providing mechanism for blending between animations or looping an animation. However, the intricate and speciﬁc motion commonly associated with humans must be constructed by the game engine programmer and designer.
+
+1.3. Aim and Objectives
+
+1.3.1. Main objective.
+The main goal of this project is to develop a character animation system allows the realization of common behaviors that are used in real time games and simulations. These behaviors include: synthesizing speech, responding to speech, moving, touching, grabbing, gesturing, and gazing, breathing, emotional expression and other non-verbal behavior.
+
+1.3.2. Specific Objectives
+•	To analyze the existing character animation systems and identify the weaknesses thereof.
+•	To design a character animation system that addresses most of these weaknesses.
+•	To implement and document the improved system.
+•	To test and validate the improved character animation system.
+
+1.4. Scope
+Scope
+
+1.5. Literature review
+Literature review
+
+1.6. Methodology
+Methodology
+
+1.7. References
+References
+
+
