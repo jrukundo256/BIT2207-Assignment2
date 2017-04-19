@@ -1,0 +1,90 @@
+\documentclass[options]{article}
+
+ \usepackage[
+    top    = 2.75cm,
+    bottom = 2.50cm,
+    left   = 4.00cm,
+    right  = 3.50cm]{geometry}
+
+\usepackage[parfill]{parskip}
+
+\title{Building a Character Animation System}
+\author{Atumanye Nobert, Lugya Ahmed, Rukundo Jonathan and Sempala Raymond \thanks{supervisor: Ernest Mwebaze}}
+\date{%
+    Makerere University\\%
+    \today
+}
+
+
+\begin{document}
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+
+
+
+
+\section{\textbf{ Introduction}} 
+Animating virtual humans is a complex task. Many different aspects of human behaviour need to be modeled in order to generate a convincing result. The behaviour and appearance of a virtual character needs to be recognizably human in expression, although photorealism is not necessary. \bigbreak People are adept at recognizing movement and human-like behaviour, so the actions and appearance of a virtual character must match the expectations of the human viewer. This means that not only must the character's movements be natural, but they must be contextually appropriate, such as responding with the appropriate reaction and in the proper time frame to stimuli. 
+
+
+\subsection{\textbf{Background}}
+Research has been done on various aspects of character animation, such as locomotion and facial animation. However, the integration of all these aspects leads to complexities. For example, coordinating locomotion with path finding, or coordinating reaching with gazing.\bigbreak
+
+At first glance, it appears that modeling an entire animated character can be achieved by combining individual areas, and then reassembling the final character as a combination of each individual part. For example, locomotion can be combined with a lip sync animation. This combination works since there is little relationship between locomotion and the movement of a character’s lips and face. Serious problems arrive when the areas overlap and directly or indirectly impact each other. For example, if you were to perform a manipulation with your hands while simultaneously looking at another object in the virtual world. The looking behaviour might engage parts of the character’s body that disrupt the manipulation. Thus, although manipulation and gazing are distinct problem areas in animation research, they can interact with each other in unexpected ways.
+
+
+\subsection{\textbf{Problem Statement}}
+This project will address the challenge of simulating the different aspects of human behaviour and more importantly the difficulties that arise as we try to integrate all these aspects. This is what we need if we are to synthesize a highly realistic, interactive character. \bigbreak
+Many game engines provide robust solutions to many real time simulation problems such as mesh rendering, lighting, particle effects and so forth. However, game engines generally do not handle complex character animation.
+
+
+\subsection{\textbf{Objectives}}
+
+
+\subsubsection{\textbf{Main Objective}} 
+The main goal of this project is to develop a character animation system that allows the realization of common human behaviors that are used in real time games and simulations. \bigbreak
+These behaviors include: synthesizing speech, responding to speech, moving, touching, grabbing, gesturing, and gazing, breathing, emotional expression and other non-verbal behaviour.
+
+
+\subsubsection{\textbf{Specific Objectives}}
+
+\begin{itemize}
+  \item To build a simulation model.
+  \item To build a prototype of our simulation model
+  \item To implement the verbal behaviours using BML as the interface.
+  \item To locate and implement example based systems.
+  \item To test and validate the system.
+\end{itemize}
+
+
+\subsection{\textbf{Scope}}
+This system is for animating virtual characters and it encompasses many important aspects of character modeling for simulations and games. These aspects include locomotion, facial animation, speech synthesis, reaching/grabbing, and various automated non-verbal behaviors, such as nodding, gesturing and eye saccades.
+
+\subsection{\textbf{Research Significance}}
+This study is important because it looks at implementing the various aspects of character animation, which if integrated well, yield high levels of realism and control.
+
+
+
+\section{\textbf{Literature review}}
+We looked at a number of different character animation systems including SmartBody. Most of them use a hierarchical, controller-based architecture. The state of the character is manipulated by series of controllers, with the output of one passed as the input to another. Each controller can override, modify or ignore the state of the virtual character. The SmartBody system uses the Behavioral Markup Language (BML) as an interface for controlling and synchronization speech, gesturing and other aspects of conversational modeling. \bigbreak
+Designing a character animation system requires the development of a number of different capabilities for a virtual character. However, the decision to use those capabilities is up to the simulation designer, game designer, or agent (AI) developer. The way most systems approached this was not effective.\bigbreak
+Our solution to this problem is to employ a separate component that handles non-verbal behaviour such as gesturing, head nodding, idle gaze behaviour and facial expression. This component enhances or changes instructions from the agent before sending them to the motion engine. Thus, a complex motion that engages many different behaviours at once, such as head nodding while blinking, speaking and emoting, can be hidden from the agent designer.
+
+
+
+\section{\textbf{Methodology}}
+The proposed methodology consists of two distinct phases: The model development phase and the model/animation run-time phase. In the first of the two phases the simulation model is built and tested and the prototype implementation can be done in any modeling/simulation system. Furthermore the animation model is built and tested; this could also be done in several environments. \bigbreak
+The system will be written almost entirely in C++, and will be ported to run on Linux, OsX and Windows. In a later date, we will also be able to port to the mobile platforms, Android and iOs.\bigbreak
+We will use BML as an interface for controlling and synchronization speech, gesturing and other aspects of conversational modeling.
+We shall implement the non-verbal behaviors such as locomotion and path finding using example based systems which we will also improve as required.
+
+
+\section{\textbf{References}}
+1. Ari Shapiro.: Building a character animation system. Institute for Creative Technologies. In: Proceedings of the 4th international conference on Motion in Games Pages 98-109. (November 2011), http://dl.acm.org/citation.cfm?id=2177830\bigbreak
+2. Johansen, R.S.: Automated Semi-Procedural Animation for Character Locomotion. Master’s thesis, Aarhus University, the Netherlands (2009)
+
+
+
+\end{document}
